@@ -33,13 +33,13 @@
     </h1>
 
     <div class="vote-option">
-        <p>ช็อคโกแลตชิพ 1: <span id="vote1">0</span> โหวต</p>
+        <p>ช็อคโกแลตชิพ 1: <span id="vote5">0</span> โหวต</p>
         <button onclick="vote('option5')">โหวตตัวเลือกที่ 1</button>
         <a href="https://www.example.com"><button>ข้อมูลอาหาร</button></a>
     </div>
 
     <div class="vote-option">
-        <p>ช็อคช็อคชิพ 2: <span id="vote2">0</span> โหวต</p>
+        <p>ช็อคช็อคชิพ 2: <span id="vote6">0</span> โหวต</p>
         <button onclick="vote('option6')">โหวตตัวเลือกที่ 2</button>
         <a href="https://www.example.com"><button>ข้อมูลอาหาร</button></a>
     </div>
@@ -52,8 +52,8 @@
         };
 
         // แสดงค่าโหวตเมื่อโหลดหน้าเว็บ
-        document.getElementById('vote1').textContent = votes.option5;
-        document.getElementById('vote2').textContent = votes.option6;
+        document.getElementById('vote5').textContent = votes.option5;
+        document.getElementById('vote6').textContent = votes.option6;
 
         function vote(option) {
             // เพิ่มคะแนนโหวตให้กับตัวเลือกที่ถูกกด
@@ -61,8 +61,8 @@
             // อัปเดต Local Storage
             localStorage.setItem(option, votes[option]);
             // อัปเดตค่าที่แสดงในหน้าเว็บ
-            document.getElementById('vote1').textContent = votes.option5;
-            document.getElementById('vote2').textContent = votes.option6;
+            document.getElementById('vote5').textContent = votes.option5;
+            document.getElementById('vote6').textContent = votes.option6;
         }
     </script>
 
